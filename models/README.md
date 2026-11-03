@@ -10,4 +10,4 @@ Each run folder has its int8 TFLite file and, when available, its Keras model an
 
 `model_int8_mcu.tflite` is the same network with the final softmax removed for TFLite Micro.
 
-The models were trained on TS-1M and GTSRB and fine-tuned on the Kaggle Moroccan set (MIT). Check the TS-1M terms of use before any commercial use.
+The models are released under the MIT licence, like the code. They were trained on TS-1M (Kaggle release, MIT licence) and fine-tuned on the Kaggle Moroccan Traffic-sign detection set (MIT licence) and on crops from YouTube driving videos (not redistributed). The 27 KB GTSRB comparison model is not included.

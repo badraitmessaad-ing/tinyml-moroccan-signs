@@ -18,6 +18,20 @@ The networks classify **cropped** traffic signs. Detection is out of scope. They
 
 All reports are in [`results/`](results/).
 
+## Quick check (2 minutes, no images, no TensorFlow)
+
+```bash
+python tools/check_results.py
+```
+
+It checks the SHA-256 hashes of the frozen models and recomputes from the saved predictions the accuracy of each model, the Wilson intervals, the accuracy per drive and the crops on which the seeds disagree, for the development and final test sets, and compares them with the paper (`ALL CHECKS PASSED`).
+
+## Datasets
+
+- **MRSC-V labels and boxes** (open, CC BY 4.0): [doi:10.5281/zenodo.23922220](https://doi.org/10.5281/zenodo.23922220)
+- **MRSC-V crop images** (restricted, research use, access on request; reviewers are granted access): [doi:10.5281/zenodo.23922536](https://doi.org/10.5281/zenodo.23922536)
+- TS-1M (Kaggle, MIT), GTSRB and the Kaggle Moroccan set are public; see [`data/README.md`](data/README.md).
+
 ## Repository layout
 
 ```
@@ -27,7 +41,8 @@ esp32/          ESP32 Arduino sketches and the scripts that pack a model into C 
 models/         frozen int8 models used in the paper + SHA256SUMS.txt
 data/           labels, boxes and file lists (no images); see data/README.md
 results/        text/CSV reports behind every table of the paper
-tools/          export_release.py (fills data/ and models/ from the working folder)
+tools/          check_results.py (quick check), setup_crops.py (crops -> script folders),
+                build_dataset.py and export_release.py (how the release was made)
 ```
 
 ## Setup
@@ -71,14 +86,27 @@ TS-1M, GTSRB, the Kaggle Moroccan set, and the crops from YouTube driving videos
 
 Training is seeded (seeds 42, 1, 2). GPU results can still differ slightly between machines. The frozen models in `models/` are the ones scored in the paper; check them against `models/SHA256SUMS.txt`.
 
-### Only evaluating the frozen models
+### Re-running the evaluation on the crop images
+
+1. Request access to the MRSC-V images record and unzip `MRSC-V_v1.0_full.zip`.
+2. `python tools/setup_crops.py --mrsc <unzipped folder>` puts the crops into `morocco_extra/`, `morocco_youtube/` and `morocco_final/` and checks every image hash.
+3. Copy the frozen models to the run folders and evaluate:
 
 ```bash
 copy models\c48_relu40k_s42_maR\*  runs\c48_relu40k_s42_maR\      (same for s1 and s2)
-python src\eval_final.py --test morocco_final --name final
+python src\eval_final.py   --test morocco_final   --name final     -> 95.1% (development set: --test morocco_youtube --name dev -> 87.5%)
+python src\eval_recheck.py --test morocco_final   --name final     -> intervals per model and per drive
 ```
 
-This needs the crops (see `data/README.md`).
+int8 inference is deterministic, so these numbers are identical on any computer. The screenshots are not distributed, so the detector-proxy test (`expert_tests.py jitter`) cannot be re-run.
+
+### Notes on exactness
+
+- **Training** ran on CPU (Intel Core i7-14700, 32 GB RAM, Windows 11; Python 3.11, TensorFlow 2.21, Keras 3.15, see `requirements-lock.txt`); no GPU was used. One 48 x 48 model takes about 2 h, a Moroccan fine-tuning about 13 min. CPU training with oneDNN is not bit-exact across machines: retraining gives results within the seed spread reported in the paper, not identical numbers. All reported results come from the frozen models in `models/`.
+- **Synthetic signs** (`make_synth_speed.py`, `make_synth_rare.py`) draw digits and text with TrueType fonts found on the computer (Windows: Bahnschrift, Arial Bold, Calibri Bold, Verdana Bold, Tahoma Bold, Segoe UI Bold, Trebuchet Bold; Linux: DejaVu Sans, Liberation Sans). With other fonts the synthetic images differ slightly. They also reuse the own training crops (backgrounds, digit swaps), so they need the MRSC-V images.
+- **Label cleaning:** `data/ts1m_test_review.csv` holds the human decisions on the flagged TS-1M test images (`label_right`, `model_right`, `unclear`) used to build the human-verified test set (`src/apply_test_review.py`).
+- **STM32:** `models/*/model_int8_mcu.tflite` was uploaded to the ST Edge AI Developer Cloud (ST Edge AI Core 4.1; settings in Appendix B of the paper), which compiles it and times it on real boards (3 repeats); the results are in `results/latency_measurements.csv`. No custom operators are used.
+- **ESP32:** `scripts\esp32_48.bat` writes the C headers; the sketches use the TensorFlow Lite Micro library for Arduino (ESP32 core).
 
 ## ESP32
 
@@ -91,7 +119,7 @@ The generated `model_data.h`, `test_data.h` and `adapt_data.h` are not in the re
 ## Licence
 
 - Code: MIT (see `LICENSE`).
-- Models (`models/`) are trained on TS-1M and GTSRB and fine-tuned on the Kaggle Moroccan set. Their use is subject to the terms of those datasets; see `models/README.md`.
+- Models (`models/`): MIT. They are trained on TS-1M (MIT) and fine-tuned on the Kaggle Moroccan set (MIT); see `models/README.md`.
 - Labels and boxes in `data/`: CC BY 4.0.
 - The video frames belong to the video authors and are not distributed.
 

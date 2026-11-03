@@ -25,4 +25,8 @@ This repository contains **no images**. It contains what is needed to rebuild or
 | `screenshot_file` | Screenshot file name, with the capture time |
 | `x0, y0, x1, y1` | Box of the sign in that screenshot, in pixels (the crop tool adds a 10% margin) |
 
+The labels, boxes and statistics are archived as **MRSC-V** ([doi:10.5281/zenodo.23922220](https://doi.org/10.5281/zenodo.23922220), CC BY 4.0). The crop images are in a restricted record ([doi:10.5281/zenodo.23922536](https://doi.org/10.5281/zenodo.23922536)): access on request for research use; reviewers are granted access. `tools/setup_crops.py` puts them back into the folders the scripts expect.
+
+`ts1m_test_review.csv` holds the human review of the flagged TS-1M test images (Section 3.3 of the paper).
+
 The screenshots were captured by hand from the videos while they played, so the box coordinates refer to the screenshot, not to a video frame. The crops therefore cannot be re-cut from the videos automatically. **The crops are available from the corresponding author on reasonable request, for research use** (badr.aitmessaad@usmba.ac.ma). The YouTube videos remain the property of their authors and are cited in the paper [54–62].
