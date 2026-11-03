@@ -1,0 +1,6 @@
+# see requirements-lock.txt for the exact versions used in the paper
+tensorflow>=2.16      # uses Keras 3 (import keras)
+numpy
+pillow
+matplotlib
+pyserial        # ESP32 batch test / live demo

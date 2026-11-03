@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or these models, please cite the paper."
+title: "TinyML traffic-sign classification for Moroccan roads"
+type: software
+license: MIT
+authors:
+  - family-names: "Ait Messaad"
+    given-names: "Badr"
+    email: badr.aitmessaad@usmba.ac.ma
+    affiliation: "LSATI Laboratory, Sidi Mohamed Ben Abdellah University, Fez, Morocco"
+  - family-names: "Motahhir"
+    given-names: "Saad"
+    email: saad.motahhir@usmba.ac.ma
+    affiliation: "LSATI Laboratory, Sidi Mohamed Ben Abdellah University, Fez, Morocco"
+version: "1.0.0"
+date-released: "2026-11-03"
+preferred-citation:
+  type: article
+  title: "TinyML traffic-sign classification for Moroccan roads under cross-country domain shift: local adaptation and microcontroller deployment"
+  authors:
+    - family-names: "Ait Messaad"
+      given-names: "Badr"
+    - family-names: "Motahhir"
+      given-names: "Saad"
+  journal: "Digital Engineering"
+  year: 2026
+  notes: "Submitted"
