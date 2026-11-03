@@ -1,0 +1,12 @@
+Grouped-split prototypes, TS-1M-only 48x48 int8 models, alpha 0.5, tau 0.6 fixed; own crops: 775 ({'midelt-fes': 499, 'casa marrakech autorout': 187, 'casa_video1': 89}). Mean of 3 seeds; McNemar seeds pooled.
+
+own crops: prototypes from the other two drives, test on casa marrakech autorout
+   n=187: without 87.9%  with prototypes 88.4%  (+0.5 pts; fixed 5, broken 2, McNemar p = 0.453)
+own crops: prototypes from the other two drives, test on casa_video1
+   n=89: without 80.5%  with prototypes 81.6%  (+1.1 pts; fixed 3, broken 0, McNemar p = 0.25)
+own crops: prototypes from the other two drives, test on midelt-fes
+   n=499: without 87.2%  with prototypes 86.6%  (-0.7 pts; fixed 3, broken 13, McNemar p = 0.0213)
+development set: prototypes from all three own-crop drives
+   n=696: without 78.3%  with prototypes 78.8%  (+0.5 pts; fixed 23, broken 12, McNemar p = 0.0895)
+final test: prototypes from all three own-crop drives
+   n=423: without 90.6%  with prototypes 91.6%  (+0.9 pts; fixed 14, broken 2, McNemar p = 0.00418)

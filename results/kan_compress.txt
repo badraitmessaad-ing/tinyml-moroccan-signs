@@ -1,0 +1,16 @@
+KAN table compression on ts1m_ma_32_clean (int8 balanced accuracy, full test set)
+
+method     tables    total curve err _kanact_late nact_late_s1 nact_late_s2    mean  ReLU6 at same KB  KAN - ReLU6
+u65        20.3KB   51.5KB    0.010%       93.29%       92.89%       93.35%  93.18%              nan%        +nan
+u17         5.3KB   36.5KB    1.749%       91.52%       88.07%       86.75%  88.78%            93.05%       -4.27
+q17         5.4KB   36.6KB    0.048%       93.25%       92.84%       93.39%  93.16%            93.06%       +0.10
+q9          2.8KB   34.1KB    0.508%       92.54%       92.10%       92.69%  92.45%            92.72%       -0.27
+q17i4       3.5KB   34.7KB    4.772%       81.69%       83.28%       79.00%  81.32%            92.81%      -11.49
+u33i4       5.9KB   37.2KB    4.405%       87.57%       72.52%       80.01%  80.03%            93.14%      -13.10
+cb8         3.6KB   34.8KB    0.431%       85.09%       63.50%       19.13%  55.90%            92.82%      -36.91
+cb4         2.6KB   33.8KB    0.734%       78.33%       59.85%       10.59%  49.59%            92.68%      -43.09
+cb8q17      2.2KB   33.4KB    0.457%       90.02%       76.99%       47.20%  71.40%            92.62%      -21.22
+
+total = KAN weights (~31.2 KB) + tables. 'ReLU6 at same KB' = int8 balanced accuracy of
+ReLU6 interpolated from our 3-seed curve: 30.8 KB 92.27 / 39.3 KB 93.43 / 51.4 KB 94.24.
+curve error = density-weighted squared error of the tables relative to the curve variance.

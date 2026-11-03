@@ -1,0 +1,41 @@
+Novelty tests, int8 models, 3 seeds: c32_mild40k_s42, c32_mild40k_s1, c32_mild40k_s2
+Moroccan test = 266 known-sign crops (val+test); unknown signs = 131 crops of 29 Moroccan classes not in our 70; TS-1M = 6936 test images (balanced acc.)
+
+A) Adaptation with the backbone frozen in int8, only the last layer trained (on-device setting)
+method                         K/class    Moroccan acc      TS-1M bal.
+full int8 model (check)              0      54.6 ± 3.2      93.1 ± 0.2
+no adaptation                        0      54.5 ± 2.5      93.1 ± 0.2
+last layer                           5      58.0 ± 3.6      88.5 ± 0.5
+last layer + replay 5/class          5      57.8 ± 1.5      90.9 ± 0.2
+last layer                          10      58.9 ± 2.0      85.5 ± 1.0
+last layer + replay 5/class         10      59.1 ± 1.0      90.2 ± 0.5
+last layer                          25      64.9 ± 2.5      79.3 ± 2.3
+last layer + replay 5/class         25      65.4 ± 2.0      89.0 ± 0.8
+last layer                          50      72.9 ± 2.0      77.7 ± 1.1
+last layer + replay 5/class         50      72.3 ± 1.5      88.4 ± 0.3
+last layer                         all      83.1 ± 1.4      69.3 ± 0.3
+last layer + replay 5/class        all      82.8 ± 1.2      86.0 ± 0.6
+
+On-MCU cost of last-layer training: weights 160x70+70 = 11270 floats (44.0 KB) + same for gradients/Adam (132.1 KB with SGD+momentum 88.0 KB); replay buffer 5x70x160 int8 = 54.7 KB; compute per training image ~33,600 MACs (forward + backward of the last layer) on top of one int8 inference.
+
+B) Unknown-sign rejection (known = our classes, unknown = Moroccan signs outside them)
+model                        score                     AUROC %   unknown rejected @95% known kept
+TS-1M model                  max softmax            62.6 ± 1.5                         10.7 ± 4.9
+TS-1M model                  energy                 69.0 ± 1.6                         17.0 ± 3.1
+TS-1M model                  margin top1-top2       59.9 ± 1.4                          0.0 ± 0.0
+after Moroccan fine-tune     max softmax            81.5 ± 1.5                        35.6 ± 10.1
+after Moroccan fine-tune     energy                 86.4 ± 1.3                         43.0 ± 6.0
+after Moroccan fine-tune     margin top1-top2       77.0 ± 1.5                        18.3 ± 13.0
+
+C) Multi-frame voting (average softmax over frames; TS-1M model scored on TS-1M, fine-tuned model on Moroccan crops)
+model                        condition                       1 frame         vote 3         vote 5
+TS-1M model                  night (x0.15 + noise)        80.5 ± 0.7    83.6 ± 1.0    84.2 ± 0.9
+TS-1M model                  noise s=0.10                 83.8 ± 0.5    88.0 ± 0.5    89.1 ± 0.5
+TS-1M model                  occlusion 15%                70.4 ± 0.2    84.5 ± 0.2    87.6 ± 0.1
+TS-1M model                  rain streaks                 87.2 ± 0.0    90.2 ± 0.3    91.2 ± 0.4
+TS-1M model                  approaching 12->32 px        92.3 ± 0.2    93.2 ± 0.2    93.9 ± 0.0   (farthest frame alone 88.1 ± 0.4)
+after Moroccan fine-tune     night (x0.15 + noise)        75.7 ± 1.4    78.2 ± 2.2    79.2 ± 2.0
+after Moroccan fine-tune     noise s=0.10                 77.4 ± 2.2    82.6 ± 1.7    83.0 ± 1.6
+after Moroccan fine-tune     occlusion 15%                64.6 ± 0.6    76.6 ± 1.4    77.8 ± 1.5
+after Moroccan fine-tune     rain streaks                 82.7 ± 0.4    85.6 ± 1.0    86.3 ± 0.4
+after Moroccan fine-tune     approaching 12->32 px        82.4 ± 0.6    83.0 ± 0.9    85.8 ± 1.2   (farthest frame alone 71.9 ± 2.3)

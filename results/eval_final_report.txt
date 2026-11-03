@@ -1,0 +1,73 @@
+Evaluation 'final' on morocco_final  (2026-11-02)
+423 crops of 38 of our classes from 363 screenshots; 24 signs outside our classes
+models (3 seeds): c48_relu40k_s42_maR, c48_relu40k_s1_maR, c48_relu40k_s2_maR
+
+accuracy           95.1 ± 0.2   (95% bootstrap interval over screenshots: 93.6–96.6)
+balanced accuracy  86.9 ± 3.1
+macro F1           86.9 ± 2.9
+speed limits       90.6 ± 0.7
+unknown-sign AUROC 93.9 ± 0.1
+
+Per class, mean of seeds (precision = of the crops predicted as this class, how many are right;
+recall = of the crops of this class, how many are found):
+class                                          support  precision   recall      F1
+0191_No_parking                                     75      98.7%    99.1%   98.9%
+0190_No_stopping_or_standing                        47      98.6%   100.0%   99.3%
+0028_maximum_speed_limit_60                         34      97.0%    90.2%   93.4%
+0436_pedestrian_crossing                            33     100.0%   100.0%  100.0%
+0342_Roundabout                                     23     100.0%   100.0%  100.0%
+0183_Do_not_enter_for_vehicular_traffic             20     100.0%    91.7%   95.6%
+0243_Pedestrian                                     19      98.2%    89.5%   93.4%
+0327_Turn_right                                     19      87.7%   100.0%   93.5%
+0135_Yield                                          16      94.1%   100.0%   97.0%
+0017_maximum_speed_limit_40                         14     100.0%    95.2%   97.4%
+0036_maximum_speed_limit_80                         14      80.0%    92.9%   85.9%
+0150_no_heavy_goods_vehicles                        10     100.0%    93.3%   96.3%
+0244_Watch_for_Children                             10      88.3%    90.0%   88.9%
+0142_Stop                                            9      96.7%    96.3%   96.3%
+0114_No_Left_Turn                                    8     100.0%   100.0%  100.0%
+0130_No_Overtaking_for_Cars                          7     100.0%   100.0%  100.0%
+0444_Parking                                         7     100.0%   100.0%  100.0%
+0204_Dangerous_turn_right                            6      95.2%   100.0%   97.4%
+0011_maximum_speed_limit_30                          5      93.3%    80.0%   85.0%
+0339_Keep_right                                      5     100.0%    60.0%   75.0%
+0041_maximum_speed_limit100                          4      93.3%    83.3%   85.2%
+0123_No_U_Turn                                       4     100.0%    83.3%   88.9%
+0132_Right_of_Way                                    4     100.0%    83.3%   88.9%
+0203_Dangerous_turn_left                             4     100.0%   100.0%  100.0%
+0116_No_Right_Turn                                   3      91.7%   100.0%   95.2%
+0202_Be_careful                                      3     100.0%   100.0%  100.0%
+0205_Double_curve_turn_left_first                    3     100.0%   100.0%  100.0%
+0221_uneven_ground                                   3     100.0%   100.0%  100.0%
+0231_Roundabout_Ahead                                3      72.2%    88.9%   79.4%
+0331_Straight_Only                                   2      33.3%    16.7%   22.2%
+0364_Bus_Stop                                        2     100.0%   100.0%  100.0%
+0179_No_bicycles                                     1       0.0%     0.0%    0.0%
+0184_No_honking                                      1     100.0%   100.0%  100.0%
+0237_Road_Narrows                                    1     100.0%   100.0%  100.0%
+0252_Domestic_animals_ahead                          1      66.7%    66.7%   66.7%
+0323_Two_way_Traffic_Ahead                           1      66.7%    66.7%   66.7%
+0326_Turn_left                                       1      11.1%    33.3%   16.7%
+0406_Hospital                                        1     100.0%   100.0%  100.0%
+
+Most common confusions (summed over 3 seeds):
+    10  0028_maximum_speed_limit_60 -> 0036_maximum_speed_limit_80
+     6  0339_Keep_right -> 0327_Turn_right
+     5  0331_Straight_Only -> 0326_Turn_left
+     3  0183_Do_not_enter_for_vehicular_traffic -> 0135_Yield
+     3  0243_Pedestrian -> 0244_Watch_for_Children
+     3  0243_Pedestrian -> 0231_Roundabout_Ahead
+     3  0244_Watch_for_Children -> 0241_Road_Work
+     3  0011_maximum_speed_limit_30 -> 0023_maximum_speed_limit_50
+     2  0041_maximum_speed_limit100 -> 0046_maximum_speed_limit_120
+     2  0150_no_heavy_goods_vehicles -> 0191_No_parking
+     2  0179_No_bicycles -> 0245_Watch_out_for_bikes
+     2  0326_Turn_left -> 0327_Turn_right
+     2  0191_No_parking -> 0190_No_stopping_or_standing
+     2  0017_maximum_speed_limit_40 -> 0028_maximum_speed_limit_60
+     1  0036_maximum_speed_limit_80 -> 0028_maximum_speed_limit_60
+
+SHA-256 of the model files (the same files must be used for every reported result):
+  c48_relu40k_s42_maR  a86ea97f5154094d52cb98ac5ff48710a9e28af26133635dd2ec391a7e3ef5d0
+  c48_relu40k_s1_maR  babd4ee3680296a7c81e81e778afbd1050b7b188111ff47c47a1561531046953
+  c48_relu40k_s2_maR  4b0769a475dc61f98da187bb3f4b5c9bcc763102af085b8710e337ff171b8008

@@ -1,0 +1,25 @@
+Detector proxy: frozen final 48x48 models, mean of 3 seeds (min-max over seeds).
+
+development set: 696 crops of our classes with their screenshot
+   saved crops (as in the paper)                         87.5%  (87.1-87.8)
+   re-cut, exact box                                     87.5%  (87.1-87.8)
+   shift 10% of box size                                 87.4%  (86.5-88.1)
+   shift 20%                                             86.2%  (86.1-86.2)
+   box 20% larger (loose)                                75.3%  (73.9-77.0)
+   box 20% smaller (tight)                               94.6%  (93.7-95.5)
+   sign at 32 px                                         89.1%  (87.6-90.2)
+   sign at 24 px                                         87.8%  (87.5-88.4)
+   sign at 16 px                                         77.8%  (75.4-79.9)
+   detector-like: shift 10%, scale 0.85-1.25, 24 px      82.2%  (80.5-83.0)
+
+final test: 423 crops of our classes with their screenshot
+   saved crops (as in the paper)                         95.1%  (94.8-95.3)
+   re-cut, exact box                                     95.1%  (94.8-95.3)
+   shift 10% of box size                                 95.4%  (95.0-95.5)
+   shift 20%                                             94.6%  (93.9-95.0)
+   box 20% larger (loose)                                89.8%  (88.7-91.3)
+   box 20% smaller (tight)                               95.9%  (95.7-96.2)
+   sign at 32 px                                         97.0%  (96.7-97.4)
+   sign at 24 px                                         96.5%  (96.0-96.7)
+   sign at 16 px                                         92.9%  (91.7-93.6)
+   detector-like: shift 10%, scale 0.85-1.25, 24 px      94.2%  (93.1-95.0)

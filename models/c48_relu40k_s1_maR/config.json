@@ -1,0 +1,37 @@
+{
+  "data": "ts1m_ma_48_clean",
+  "out": "runs\\c48_relu40k_s1",
+  "size": 48,
+  "head": "linear",
+  "head_dim": 32,
+  "grid": 8,
+  "basis": "sech2",
+  "widths": "16,32,64,96,160",
+  "multiscale": false,
+  "flip_aug": false,
+  "act": "relu6",
+  "act_grid": 4,
+  "act_from": 1,
+  "pool": "gap",
+  "pool_ch": 32,
+  "gray": false,
+  "robust_aug": false,
+  "robust_p": 1.0,
+  "init": null,
+  "no_early_stop": false,
+  "dropout": 0.2,
+  "epochs": 100,
+  "batch": 128,
+  "lr": 0.002,
+  "patience": 10,
+  "seed": 1,
+  "finetuned_from": "runs\\c48_relu40k_s1",
+  "morocco": "morocco_crops",
+  "extra": [
+    "morocco_extra"
+  ],
+  "synth": [
+    "morocco_synth",
+    "morocco_synth_rare"
+  ]
+}

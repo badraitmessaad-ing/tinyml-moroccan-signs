@@ -1,0 +1,30 @@
+Re-analysis 'dev' on morocco_youtube: 696 known-class crops, 621 screenshots, 70 other signs. Predictions identical to eval_final.py (same models, same input).
+
+1. Accuracy with 95% intervals, per model (screenshot bootstrap, 2000 resamples) and Wilson:
+   c48_relu40k_s42_maR      sha a86ea97f5154   87.6%  bootstrap  85.1- 90.2  Wilson  85.0- 89.9
+   c48_relu40k_s1_maR       sha babd4ee36802   87.1%  bootstrap  84.5- 89.4  Wilson  84.4- 89.4
+   c48_relu40k_s2_maR       sha 4b0769a475dc   87.8%  bootstrap  85.2- 90.3  Wilson  85.1- 90.0
+   mean of the 3 models: 87.5%, bootstrap of the seed-mean 85.5-89.4 (this is the interval eval_final.py reported; it is narrower because averaging three models smooths crops on which the seeds disagree)
+   crops on which the 3 models disagree: 133 of 696
+
+2. Accuracy per drive (mean of the 3 models; Wilson interval of the seed-42 model):
+   autorout fes-rabat     n= 158   76.4% ± 2.2  (Wilson 71.4-84.2)  speed limits 75.2% (n=82)
+   fes_video1             n= 110   85.8% ± 2.6  (Wilson 81.9-93.6)  speed limits 50.0% (n=6)
+   fes_video2             n= 197   92.7% ± 2.3  (Wilson 84.8-93.3)  speed limits 88.2% (n=17)
+   rabat_video1           n= 231   91.5% ± 0.5  (Wilson 87.0-94.3)  speed limits 81.6% (n=47)
+
+3. Paired comparison of consecutive steps (same crops). McNemar: seeds pooled, exact two-sided. Difference interval: paired screenshot bootstrap of the seed-mean accuracy.
+   TS-1M only, 32x32                         72.2%  (3 seeds)
+   + Kaggle fine-tune, 32x32                 79.6%  (3 seeds)   vs previous:  +7.4 pts (95% +5.7 to +9.1), fixed 210, broken 55, McNemar p = 1.63e-22
+   + own crops, 32x32                        82.5%  (3 seeds)   vs previous:  +2.9 pts (95% +1.5 to +4.3), fixed 110, broken 50, McNemar p = 2.39e-06
+   + synthetic speed signs, 32x32            82.6%  (3 seeds)   vs previous:  +0.1 pts (95% -1.1 to +1.4), fixed 69, broken 66, McNemar p = 0.863
+   TS-1M only, 48x48                         78.4%  (3 seeds)   vs previous:  -4.2 pts (95% -6.4 to -2.0), fixed 173, broken 260, McNemar p = 3.39e-05
+   + Kaggle + own + synthetic, 48x48         86.6%  (3 seeds)   vs previous:  +8.1 pts (95% +6.4 to +10.0), fixed 211, broken 41, McNemar p = 9.36e-29
+   + synthetic rare signs (final), 48x48     87.5%  (3 seeds)   vs previous:  +0.9 pts (95% +0.0 to +1.8), fixed 42, broken 23, McNemar p = 0.0248
+
+4. Other paired comparisons:
+   input size, TS-1M only: 32x32 -> 48x48          +6.3 pts (95% +4.3 to +8.3), fixed 286, broken 155, McNemar p = 4.5e-10
+   input size, full recipe: 32x32 -> 48x48         +4.0 pts (95% +2.1 to +5.9), fixed 220, broken 137, McNemar p = 1.31e-05
+   synthetic speed signs, speed limits only        +3.9 pts (95% -0.2 to +8.0), fixed 46, broken 28, McNemar p = 0.0474
+   own crops, speed limits only                   +15.1 pts (95% +11.5 to +19.1), fixed 78, broken 9, McNemar p = 7.47e-15
+   whole recipe at 48x48: TS-1M only -> final      +9.1 pts (95% +7.3 to +11.0), fixed 226, broken 37, McNemar p = 2.83e-34

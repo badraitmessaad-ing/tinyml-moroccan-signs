@@ -1,0 +1,325 @@
+run,corruption,ts1m_balanced,morocco_acc
+c32_relu40k_s42,clean,93.50,59.4
+c32_relu40k_s42,blur s=0.7,94.74,57.5
+c32_relu40k_s42,blur s=1.2,93.19,50.8
+c32_relu40k_s42,motion blur 3px,93.99,59.8
+c32_relu40k_s42,motion blur 5px,85.56,52.6
+c32_relu40k_s42,dark (x0.35),91.03,51.9
+c32_relu40k_s42,night (x0.15 + noise),54.74,35.0
+c32_relu40k_s42,glare / overexposed,90.51,53.0
+c32_relu40k_s42,fog,92.90,54.5
+c32_relu40k_s42,rain streaks,84.42,54.5
+c32_relu40k_s42,noise s=0.05,84.56,53.0
+c32_relu40k_s42,noise s=0.10,63.55,40.6
+c32_relu40k_s42,JPEG q=15,80.51,45.1
+c32_relu40k_s42,distant (16 px),92.30,49.6
+c32_relu40k_s42,distant (12 px),86.01,42.5
+c32_relu40k_s42,occlusion 15%,62.15,31.6
+c32_relu40k_s42,occlusion 30%,21.97,14.7
+c32_relu40k_s42,rotation 20 deg,89.87,51.9
+c32_relu40k_s1,clean,93.76,53.8
+c32_relu40k_s1,blur s=0.7,94.76,54.9
+c32_relu40k_s1,blur s=1.2,92.91,51.1
+c32_relu40k_s1,motion blur 3px,93.59,56.4
+c32_relu40k_s1,motion blur 5px,84.74,49.2
+c32_relu40k_s1,dark (x0.35),91.61,52.6
+c32_relu40k_s1,night (x0.15 + noise),59.07,35.7
+c32_relu40k_s1,glare / overexposed,90.14,51.1
+c32_relu40k_s1,fog,93.17,55.6
+c32_relu40k_s1,rain streaks,83.41,49.6
+c32_relu40k_s1,noise s=0.05,85.83,46.6
+c32_relu40k_s1,noise s=0.10,66.21,37.6
+c32_relu40k_s1,JPEG q=15,82.07,39.1
+c32_relu40k_s1,distant (16 px),92.14,50.4
+c32_relu40k_s1,distant (12 px),86.00,42.5
+c32_relu40k_s1,occlusion 15%,60.41,31.2
+c32_relu40k_s1,occlusion 30%,20.71,10.5
+c32_relu40k_s1,rotation 20 deg,89.61,57.1
+c32_relu40k_s2,clean,93.33,47.4
+c32_relu40k_s2,blur s=0.7,94.84,52.6
+c32_relu40k_s2,blur s=1.2,93.23,47.0
+c32_relu40k_s2,motion blur 3px,93.87,51.5
+c32_relu40k_s2,motion blur 5px,85.73,48.5
+c32_relu40k_s2,dark (x0.35),91.59,50.0
+c32_relu40k_s2,night (x0.15 + noise),57.92,33.5
+c32_relu40k_s2,glare / overexposed,91.24,48.5
+c32_relu40k_s2,fog,93.33,50.0
+c32_relu40k_s2,rain streaks,83.95,41.4
+c32_relu40k_s2,noise s=0.05,86.40,43.2
+c32_relu40k_s2,noise s=0.10,65.54,36.5
+c32_relu40k_s2,JPEG q=15,82.83,39.1
+c32_relu40k_s2,distant (16 px),91.97,47.7
+c32_relu40k_s2,distant (12 px),86.20,42.1
+c32_relu40k_s2,occlusion 15%,61.50,28.9
+c32_relu40k_s2,occlusion 30%,21.91,9.4
+c32_relu40k_s2,rotation 20 deg,89.43,48.9
+c32_mild40k_s42,clean,92.90,50.4
+c32_mild40k_s42,blur s=0.7,93.53,49.2
+c32_mild40k_s42,blur s=1.2,92.16,44.7
+c32_mild40k_s42,motion blur 3px,93.21,49.6
+c32_mild40k_s42,motion blur 5px,88.94,42.5
+c32_mild40k_s42,dark (x0.35),91.70,52.6
+c32_mild40k_s42,night (x0.15 + noise),79.33,42.9
+c32_mild40k_s42,glare / overexposed,90.21,51.9
+c32_mild40k_s42,fog,92.47,53.8
+c32_mild40k_s42,rain streaks,86.47,49.6
+c32_mild40k_s42,noise s=0.05,90.24,46.6
+c32_mild40k_s42,noise s=0.10,82.63,43.2
+c32_mild40k_s42,JPEG q=15,85.76,37.2
+c32_mild40k_s42,distant (16 px),91.61,39.8
+c32_mild40k_s42,distant (12 px),87.59,34.6
+c32_mild40k_s42,occlusion 15%,71.44,34.6
+c32_mild40k_s42,occlusion 30%,33.26,14.7
+c32_mild40k_s42,rotation 20 deg,87.83,49.2
+c32_mild40k_s1,clean,93.16,57.9
+c32_mild40k_s1,blur s=0.7,94.07,56.8
+c32_mild40k_s1,blur s=1.2,92.63,43.6
+c32_mild40k_s1,motion blur 3px,93.91,54.5
+c32_mild40k_s1,motion blur 5px,90.19,44.4
+c32_mild40k_s1,dark (x0.35),92.90,55.6
+c32_mild40k_s1,night (x0.15 + noise),80.82,44.4
+c32_mild40k_s1,glare / overexposed,90.91,51.9
+c32_mild40k_s1,fog,92.96,55.6
+c32_mild40k_s1,rain streaks,86.99,52.6
+c32_mild40k_s1,noise s=0.05,90.90,51.9
+c32_mild40k_s1,noise s=0.10,84.09,47.0
+c32_mild40k_s1,JPEG q=15,85.47,41.7
+c32_mild40k_s1,distant (16 px),92.41,44.0
+c32_mild40k_s1,distant (12 px),88.47,36.8
+c32_mild40k_s1,occlusion 15%,70.90,38.0
+c32_mild40k_s1,occlusion 30%,34.53,13.2
+c32_mild40k_s1,rotation 20 deg,87.93,53.0
+c32_mild40k_s2,clean,93.33,55.6
+c32_mild40k_s2,blur s=0.7,93.90,53.0
+c32_mild40k_s2,blur s=1.2,92.61,47.4
+c32_mild40k_s2,motion blur 3px,93.63,55.6
+c32_mild40k_s2,motion blur 5px,90.26,48.1
+c32_mild40k_s2,dark (x0.35),91.90,52.3
+c32_mild40k_s2,night (x0.15 + noise),82.00,45.5
+c32_mild40k_s2,glare / overexposed,90.23,48.5
+c32_mild40k_s2,fog,92.34,52.6
+c32_mild40k_s2,rain streaks,87.07,51.1
+c32_mild40k_s2,noise s=0.05,91.20,52.3
+c32_mild40k_s2,noise s=0.10,84.29,45.5
+c32_mild40k_s2,JPEG q=15,85.53,42.9
+c32_mild40k_s2,distant (16 px),92.40,46.6
+c32_mild40k_s2,distant (12 px),88.26,36.8
+c32_mild40k_s2,occlusion 15%,70.26,35.0
+c32_mild40k_s2,occlusion 30%,32.57,13.9
+c32_mild40k_s2,rotation 20 deg,88.47,53.4
+c32_robft40k_s42,clean,92.63,56.4
+c32_robft40k_s42,blur s=0.7,93.47,54.1
+c32_robft40k_s42,blur s=1.2,91.39,46.2
+c32_robft40k_s42,motion blur 3px,93.04,54.5
+c32_robft40k_s42,motion blur 5px,88.01,51.1
+c32_robft40k_s42,dark (x0.35),90.81,54.1
+c32_robft40k_s42,night (x0.15 + noise),74.70,46.2
+c32_robft40k_s42,glare / overexposed,90.27,53.4
+c32_robft40k_s42,fog,92.59,57.9
+c32_robft40k_s42,rain streaks,85.39,53.8
+c32_robft40k_s42,noise s=0.05,89.56,52.3
+c32_robft40k_s42,noise s=0.10,82.43,45.9
+c32_robft40k_s42,JPEG q=15,84.66,42.1
+c32_robft40k_s42,distant (16 px),90.97,45.5
+c32_robft40k_s42,distant (12 px),86.00,38.7
+c32_robft40k_s42,occlusion 15%,66.91,35.7
+c32_robft40k_s42,occlusion 30%,28.77,15.0
+c32_robft40k_s42,rotation 20 deg,88.26,50.0
+c32_robft40k_s1,clean,92.56,51.9
+c32_robft40k_s1,blur s=0.7,93.29,53.8
+c32_robft40k_s1,blur s=1.2,90.97,45.1
+c32_robft40k_s1,motion blur 3px,92.79,54.1
+c32_robft40k_s1,motion blur 5px,87.63,46.6
+c32_robft40k_s1,dark (x0.35),91.39,51.5
+c32_robft40k_s1,night (x0.15 + noise),76.03,44.0
+c32_robft40k_s1,glare / overexposed,90.77,51.1
+c32_robft40k_s1,fog,92.43,52.6
+c32_robft40k_s1,rain streaks,84.98,48.9
+c32_robft40k_s1,noise s=0.05,89.86,48.5
+c32_robft40k_s1,noise s=0.10,82.37,45.9
+c32_robft40k_s1,JPEG q=15,84.61,41.4
+c32_robft40k_s1,distant (16 px),90.54,43.6
+c32_robft40k_s1,distant (12 px),85.34,35.7
+c32_robft40k_s1,occlusion 15%,67.17,32.0
+c32_robft40k_s1,occlusion 30%,26.66,11.3
+c32_robft40k_s1,rotation 20 deg,88.09,54.5
+c32_robft40k_s2,clean,92.86,45.9
+c32_robft40k_s2,blur s=0.7,93.66,48.5
+c32_robft40k_s2,blur s=1.2,91.60,43.2
+c32_robft40k_s2,motion blur 3px,93.13,52.3
+c32_robft40k_s2,motion blur 5px,87.90,44.7
+c32_robft40k_s2,dark (x0.35),91.40,47.4
+c32_robft40k_s2,night (x0.15 + noise),75.06,41.7
+c32_robft40k_s2,glare / overexposed,89.91,44.0
+c32_robft40k_s2,fog,92.46,46.6
+c32_robft40k_s2,rain streaks,85.66,42.9
+c32_robft40k_s2,noise s=0.05,90.13,43.2
+c32_robft40k_s2,noise s=0.10,82.21,40.2
+c32_robft40k_s2,JPEG q=15,85.34,40.6
+c32_robft40k_s2,distant (16 px),90.84,42.9
+c32_robft40k_s2,distant (12 px),86.11,36.1
+c32_robft40k_s2,occlusion 15%,66.76,30.5
+c32_robft40k_s2,occlusion 30%,27.87,13.2
+c32_robft40k_s2,rotation 20 deg,87.44,46.6
+c32_relu40k_s42_maB,clean,92.37,86.8
+c32_relu40k_s42_maB,blur s=0.7,94.40,88.0
+c32_relu40k_s42_maB,blur s=1.2,92.44,82.0
+c32_relu40k_s42_maB,motion blur 3px,93.49,86.5
+c32_relu40k_s42_maB,motion blur 5px,85.03,75.2
+c32_relu40k_s42_maB,dark (x0.35),89.86,84.2
+c32_relu40k_s42_maB,night (x0.15 + noise),53.01,56.0
+c32_relu40k_s42_maB,glare / overexposed,89.37,83.8
+c32_relu40k_s42_maB,fog,91.96,86.5
+c32_relu40k_s42_maB,rain streaks,82.44,81.2
+c32_relu40k_s42_maB,noise s=0.05,81.16,77.4
+c32_relu40k_s42_maB,noise s=0.10,57.40,64.3
+c32_relu40k_s42_maB,JPEG q=15,77.53,68.0
+c32_relu40k_s42_maB,distant (16 px),91.74,79.7
+c32_relu40k_s42_maB,distant (12 px),84.70,69.5
+c32_relu40k_s42_maB,occlusion 15%,60.15,59.8
+c32_relu40k_s42_maB,occlusion 30%,20.91,22.6
+c32_relu40k_s42_maB,rotation 20 deg,89.29,84.6
+c32_relu40k_s1_maB,clean,92.77,86.8
+c32_relu40k_s1_maB,blur s=0.7,94.61,88.3
+c32_relu40k_s1_maB,blur s=1.2,92.69,83.5
+c32_relu40k_s1_maB,motion blur 3px,93.33,86.5
+c32_relu40k_s1_maB,motion blur 5px,84.21,75.9
+c32_relu40k_s1_maB,dark (x0.35),91.09,82.3
+c32_relu40k_s1_maB,night (x0.15 + noise),56.89,57.5
+c32_relu40k_s1_maB,glare / overexposed,90.00,84.2
+c32_relu40k_s1_maB,fog,92.54,86.5
+c32_relu40k_s1_maB,rain streaks,81.83,80.8
+c32_relu40k_s1_maB,noise s=0.05,83.73,77.4
+c32_relu40k_s1_maB,noise s=0.10,62.42,66.2
+c32_relu40k_s1_maB,JPEG q=15,79.78,68.8
+c32_relu40k_s1_maB,distant (16 px),92.29,79.3
+c32_relu40k_s1_maB,distant (12 px),85.50,70.7
+c32_relu40k_s1_maB,occlusion 15%,58.51,58.6
+c32_relu40k_s1_maB,occlusion 30%,19.27,18.8
+c32_relu40k_s1_maB,rotation 20 deg,88.86,84.2
+c32_relu40k_s2_maB,clean,92.67,86.8
+c32_relu40k_s2_maB,blur s=0.7,94.51,88.0
+c32_relu40k_s2_maB,blur s=1.2,92.74,83.1
+c32_relu40k_s2_maB,motion blur 3px,93.60,86.8
+c32_relu40k_s2_maB,motion blur 5px,84.79,77.4
+c32_relu40k_s2_maB,dark (x0.35),90.11,83.5
+c32_relu40k_s2_maB,night (x0.15 + noise),51.62,58.3
+c32_relu40k_s2_maB,glare / overexposed,89.96,84.2
+c32_relu40k_s2_maB,fog,92.19,85.0
+c32_relu40k_s2_maB,rain streaks,82.35,83.5
+c32_relu40k_s2_maB,noise s=0.05,82.82,80.1
+c32_relu40k_s2_maB,noise s=0.10,59.17,63.5
+c32_relu40k_s2_maB,JPEG q=15,79.94,67.7
+c32_relu40k_s2_maB,distant (16 px),91.39,80.5
+c32_relu40k_s2_maB,distant (12 px),85.20,71.4
+c32_relu40k_s2_maB,occlusion 15%,59.67,60.9
+c32_relu40k_s2_maB,occlusion 30%,21.30,21.8
+c32_relu40k_s2_maB,rotation 20 deg,87.77,81.2
+c32_mild40k_s42_maB,clean,91.86,85.3
+c32_mild40k_s42_maB,blur s=0.7,93.31,88.0
+c32_mild40k_s42_maB,blur s=1.2,91.91,83.1
+c32_mild40k_s42_maB,motion blur 3px,92.66,88.0
+c32_mild40k_s42_maB,motion blur 5px,88.26,77.8
+c32_mild40k_s42_maB,dark (x0.35),91.37,83.5
+c32_mild40k_s42_maB,night (x0.15 + noise),78.65,74.8
+c32_mild40k_s42_maB,glare / overexposed,89.80,83.8
+c32_mild40k_s42_maB,fog,91.44,84.6
+c32_mild40k_s42_maB,rain streaks,85.84,83.8
+c32_mild40k_s42_maB,noise s=0.05,89.09,82.7
+c32_mild40k_s42_maB,noise s=0.10,80.29,73.3
+c32_mild40k_s42_maB,JPEG q=15,84.26,76.3
+c32_mild40k_s42_maB,distant (16 px),91.47,81.2
+c32_mild40k_s42_maB,distant (12 px),87.23,74.4
+c32_mild40k_s42_maB,occlusion 15%,69.29,63.2
+c32_mild40k_s42_maB,occlusion 30%,30.33,30.8
+c32_mild40k_s42_maB,rotation 20 deg,87.33,81.2
+c32_mild40k_s1_maB,clean,92.50,85.7
+c32_mild40k_s1_maB,blur s=0.7,93.83,86.5
+c32_mild40k_s1_maB,blur s=1.2,92.53,77.1
+c32_mild40k_s1_maB,motion blur 3px,93.29,84.2
+c32_mild40k_s1_maB,motion blur 5px,89.47,72.9
+c32_mild40k_s1_maB,dark (x0.35),92.07,86.5
+c32_mild40k_s1_maB,night (x0.15 + noise),79.10,77.8
+c32_mild40k_s1_maB,glare / overexposed,90.04,85.3
+c32_mild40k_s1_maB,fog,92.60,87.6
+c32_mild40k_s1_maB,rain streaks,86.11,83.5
+c32_mild40k_s1_maB,noise s=0.05,89.80,83.1
+c32_mild40k_s1_maB,noise s=0.10,82.28,76.3
+c32_mild40k_s1_maB,JPEG q=15,84.63,73.3
+c32_mild40k_s1_maB,distant (16 px),91.80,75.2
+c32_mild40k_s1_maB,distant (12 px),87.60,68.8
+c32_mild40k_s1_maB,occlusion 15%,69.14,68.4
+c32_mild40k_s1_maB,occlusion 30%,30.82,30.8
+c32_mild40k_s1_maB,rotation 20 deg,87.06,80.8
+c32_mild40k_s2_maB,clean,92.74,86.1
+c32_mild40k_s2_maB,blur s=0.7,93.54,86.1
+c32_mild40k_s2_maB,blur s=1.2,92.29,81.6
+c32_mild40k_s2_maB,motion blur 3px,93.00,85.7
+c32_mild40k_s2_maB,motion blur 5px,89.60,77.4
+c32_mild40k_s2_maB,dark (x0.35),91.60,83.8
+c32_mild40k_s2_maB,night (x0.15 + noise),79.86,74.4
+c32_mild40k_s2_maB,glare / overexposed,90.14,83.8
+c32_mild40k_s2_maB,fog,91.77,85.0
+c32_mild40k_s2_maB,rain streaks,86.29,83.8
+c32_mild40k_s2_maB,noise s=0.05,90.10,84.6
+c32_mild40k_s2_maB,noise s=0.10,83.01,77.1
+c32_mild40k_s2_maB,JPEG q=15,84.29,75.2
+c32_mild40k_s2_maB,distant (16 px),92.09,82.3
+c32_mild40k_s2_maB,distant (12 px),87.83,72.6
+c32_mild40k_s2_maB,occlusion 15%,68.87,61.3
+c32_mild40k_s2_maB,occlusion 30%,30.38,22.6
+c32_mild40k_s2_maB,rotation 20 deg,87.61,82.0
+c32_robft40k_s42_maB,clean,91.82,85.7
+c32_robft40k_s42_maB,blur s=0.7,93.10,86.5
+c32_robft40k_s42_maB,blur s=1.2,91.16,77.1
+c32_robft40k_s42_maB,motion blur 3px,92.41,84.2
+c32_robft40k_s42_maB,motion blur 5px,87.64,77.8
+c32_robft40k_s42_maB,dark (x0.35),90.39,83.5
+c32_robft40k_s42_maB,night (x0.15 + noise),74.93,69.9
+c32_robft40k_s42_maB,glare / overexposed,89.16,82.7
+c32_robft40k_s42_maB,fog,91.79,84.2
+c32_robft40k_s42_maB,rain streaks,84.57,82.7
+c32_robft40k_s42_maB,noise s=0.05,88.67,84.2
+c32_robft40k_s42_maB,noise s=0.10,81.85,78.6
+c32_robft40k_s42_maB,JPEG q=15,83.95,75.9
+c32_robft40k_s42_maB,distant (16 px),90.44,75.9
+c32_robft40k_s42_maB,distant (12 px),85.77,72.2
+c32_robft40k_s42_maB,occlusion 15%,66.16,62.4
+c32_robft40k_s42_maB,occlusion 30%,27.04,27.4
+c32_robft40k_s42_maB,rotation 20 deg,87.09,78.9
+c32_robft40k_s1_maB,clean,92.11,83.5
+c32_robft40k_s1_maB,blur s=0.7,92.97,85.7
+c32_robft40k_s1_maB,blur s=1.2,91.03,82.3
+c32_robft40k_s1_maB,motion blur 3px,92.50,86.1
+c32_robft40k_s1_maB,motion blur 5px,87.47,80.1
+c32_robft40k_s1_maB,dark (x0.35),91.16,83.1
+c32_robft40k_s1_maB,night (x0.15 + noise),74.48,70.7
+c32_robft40k_s1_maB,glare / overexposed,89.34,81.6
+c32_robft40k_s1_maB,fog,91.81,84.2
+c32_robft40k_s1_maB,rain streaks,84.32,81.2
+c32_robft40k_s1_maB,noise s=0.05,89.41,83.1
+c32_robft40k_s1_maB,noise s=0.10,81.47,76.3
+c32_robft40k_s1_maB,JPEG q=15,84.13,74.4
+c32_robft40k_s1_maB,distant (16 px),90.30,81.2
+c32_robft40k_s1_maB,distant (12 px),85.01,69.9
+c32_robft40k_s1_maB,occlusion 15%,65.86,61.7
+c32_robft40k_s1_maB,occlusion 30%,24.69,24.8
+c32_robft40k_s1_maB,rotation 20 deg,86.99,79.3
+c32_robft40k_s2_maB,clean,92.51,84.6
+c32_robft40k_s2_maB,blur s=0.7,93.41,83.8
+c32_robft40k_s2_maB,blur s=1.2,91.29,81.6
+c32_robft40k_s2_maB,motion blur 3px,92.71,86.5
+c32_robft40k_s2_maB,motion blur 5px,87.83,76.7
+c32_robft40k_s2_maB,dark (x0.35),90.81,82.3
+c32_robft40k_s2_maB,night (x0.15 + noise),75.25,72.6
+c32_robft40k_s2_maB,glare / overexposed,89.27,81.6
+c32_robft40k_s2_maB,fog,91.80,85.7
+c32_robft40k_s2_maB,rain streaks,84.81,82.0
+c32_robft40k_s2_maB,noise s=0.05,89.49,81.2
+c32_robft40k_s2_maB,noise s=0.10,81.87,75.9
+c32_robft40k_s2_maB,JPEG q=15,84.45,75.2
+c32_robft40k_s2_maB,distant (16 px),90.54,79.3
+c32_robft40k_s2_maB,distant (12 px),85.53,73.7
+c32_robft40k_s2_maB,occlusion 15%,65.84,61.7
+c32_robft40k_s2_maB,occlusion 30%,26.80,33.1
+c32_robft40k_s2_maB,rotation 20 deg,86.30,76.7

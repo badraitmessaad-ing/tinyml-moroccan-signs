@@ -1,0 +1,75 @@
+folder,french_name,ts1m_ids
+00_Acces_interdit_aux_motocycles,Accès interdit aux motocycles,0178
+01_Sens_giratoire_obligatoire,Sens giratoire obligatoire,0342
+02_Parc_de_stationnement,Parc de stationnement,0444
+03_Circulation_interdite_dans_les_deux_sens,Circulation interdite dans les deux sens,0148
+04_Acces_interdit_aux_vehicules_de_transpor,Accès interdit aux véhicules de transport en commun de personnes,
+05_Le_stationnement_et_ou_l_arret_sont_gena,Le stationnement et/ou l'arrêt sont gênants. Le véhicule est susceptible d'une mise en fourrière.,
+06_Acces_interdit_aux_cyclomoteurs,Accès interdit aux cyclomoteurs,
+07_Traversee_de_voies_de_tramway,Traversée de voies de tramway,
+08_Travaux,Travaux,0241
+09_Piste_obligatoire_pour_cyclistes_et_cycl,Piste obligatoire pour cyclistes et cyclomoteurs,
+10_Contournement_obligatoire_par_la_droite,Contournement obligatoire par la droite,0339
+11_Arret_d_autobus,Arrêt d'autobus,0364
+12_Intersection_d_une_route_prioritaire_ave,Intersection d'une route prioritaire avec une route de moindre importance,0132
+13_Cedez_le_passage_a_l_intersection_signal,Cédez le passage à l'intersection - signal de position,0135
+14_Acces_interdit_aux_vehicules_a_traction_,Accès interdit aux véhicules à traction animale,
+15_Retrecissement_ponctuel,Rétrécissement ponctuel,
+16_Passage_pour_pietons,Passage pour piétons,0243 0436
+17_Endroit_frequente_par_les_enfants,Endroit fréquenté par les enfants,0244
+18_Acces_interdit_aux_vehicules_affectes_au,Accès interdit aux véhicules affectés au transport de marchandises,0150
+19_Interdiction_de_depasser,Interdiction de dépasser,0130
+20_Interdiction_de_faire_demi_tour,Interdiction de faire demi-tour,0123
+21_Interdiction_de_tourner_a_droite,Interdiction de tourner à droite,0116
+22_Interdiction_de_tourner_a_gauche,Interdiction de tourner à gauche,0114
+23_Virage_a_droite,Virage à droite,0204
+24_Virage_a_gauche,Virage à gauche,0203
+25_Arret_au_barrage_de_police,Arrêt au barrage de police,
+26_Stationnement_interdit,Stationnement interdit,0191
+27_Limitation_de_Vitesse,Limitation de Vitesse,0011 0017 0023 0028 0032 0036 0039 0041 0046
+28_Stop,Stop,0142
+29_Passage_d_animaux_domestiques,Passage d'animaux domestiques,0252
+30_Carrefour_a_sens_giratoire,Carrefour à sens giratoire,0231
+31_Succession_de_virages_dont_le_premier_es,Succession de virages dont le premier est à gauche,0205
+32_Succession_de_virages_dont_le_premier_es,Succession de virages dont le premier est à droite,0206
+33_Chaussee_retrecie,Chaussée rétrécie,0237
+34_Sens_interdit,Sens interdit,0183
+35_Acces_interdit_aux_vehicules_dont_la_hau,"Accès interdit aux véhicules dont la hauteur, chargement compris, est supérieure au nombre indiqué",
+36_Projection_de_gravillons,Projection de gravillons,
+37_Arret_au_poste_de_douane,Arrêt au poste de douane,
+38_Direction_obligatoire_a_la_prochaine_int,Direction obligatoire à la prochaine intersection : à gauche,0326 0330
+39_Acces_interdit_aux_vehicules_dont_le_poi,Accès interdit aux véhicules dont le poids total autorisé en charge ou le poids total roulant autorisé excède le nombre indiqué,
+40_Cassis_ou_dos_d_ane,Cassis ou dos d'âne,0218 0221
+41_Direction_obligatoire_a_la_prochaine_int,Direction obligatoire à la prochaine intersection : tout droit,0331
+42_Acces_interdit_aux_cycles,Accès interdit aux cycles,0179
+43_Arret_et_stationnement_interdit,Arrêt et stationnement interdit,0190
+44_Chaussee_submersible,Chaussée submersible,
+45_Obligation_de_tourner_a_gauche_avant_le_,Obligation de tourner à gauche avant le panneau,0326 0330
+46_Cedez_le_passage_a_la_circulation_venant,Cédez le passage à la circulation venant en sens inverse,0141
+47_Acces_interdit_aux_pietons,Accès interdit aux piétons,0176
+48_Chaussee_retrecie_par_la_gauche,Chaussée rétrécie par la gauche,0238
+49_Controle_routier,Contrôle routier,
+50_Obligation_de_tourner_a_drote_avant_le_p,Obligation de tourner à drote avant le panneau,0327 0328
+51_Autres_dangers,Autres dangers,0202
+52_Contournement_obligatoire_par_la_gauche,Contournement obligatoire par la gauche,0340
+53_Piste_obligatoire_pour_cyclistes,Piste obligatoire pour cyclistes,
+54_Intersection_de_routes_auxquelles_s_appl,Intersection de routes auxquelles s'applique la règle générale de priorité à droite,0298
+55_Interdiction_aux_vehicules_de_circuler_s,Interdiction aux véhicules de circuler sans maintenir entre eux un intervalle au moins égal au nombre indiqué,
+56_Voie_reservee_aux_tramways,Voie réservée aux tramways,
+57_Montee_a_forte_inclinaison,Montée à forte inclinaison,
+58_Interdiction_aux_vehicules_automobiles_v,"Interdiction aux véhicules automobiles, véhicules articulés, trains doubles ou ensemble de véhicules, affectés au transport de marchandises dont le poids total autorisé en charge ou le poids total roulant autorisé est supérieur à 3.5 tonnes de dépasser tous les véhicules à moteur autres que ceux à deux roues sans side-car",0131
+59_Cedez_le_passage_a_l_intersection_signal,Cédez le passage à l'intersection - signal avancé du panneau stop,
+60_Ralentisseur_type_dos_d_ane,Ralentisseur type dos d'âne,0218 0221
+61_Fin_de_limitation_de_Vitesse,Fin de limitation de Vitesse,
+62_Fin_de_toutes_les_interdictions_precedem,"Fin de toutes les interdictions précédemment signalées, imposées aux véhicules en mouvement",
+63_Signaux_sonores_interdits,Signaux sonores interdits,0184
+64_Fin_d_interdiction_de_depasser,Fin d'interdiction de dépasser,
+65_Risque_d_incendie_de_foret,Risque d'incendie de forêt,
+66_Arret_au_barrage_de_gendarmerie,Arrêt au barrage de gendarmerie,
+67_Serrez_a_droite,Serrez à droite,0339
+68_Directions_obligatoires_a_la_prochaine_i,Directions obligatoires à la prochaine intersection à droite ou à gauche,
+69_Chaussee_retrecie_par_la_droite,Chaussée rétrécie par la droite,0239
+70_Acces_interdit_aux_vehicules_pesant_par_,"Accès interdit aux véhicules pesant, par essieu, plus que le nombre indiqué",
+71_affectation_de_voies,affectation de voies,
+72_Direction_de_deviation,Direction de déviation,
+73_Balisage_de_virages,Balisage de virages,

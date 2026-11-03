@@ -1,0 +1,30 @@
+board,core,mhz,model,input,ms_per_image,source
+STM32F401RE,Cortex-M4,84,c32_relu40k_s42_maT,32,35.3,ST Edge AI Developer Cloud
+STM32U3C5,Cortex-M33,96,c32_relu40k_s42_maT,32,9.6,ST Edge AI Developer Cloud
+STM32L4R9,Cortex-M4,120,c32_relu40k_s42_maT,32,25.0,ST Edge AI Developer Cloud
+STM32C5A3,Cortex-M33,144,c32_relu40k_s42_maT,32,18.7,ST Edge AI Developer Cloud
+STM32U585,Cortex-M33,160,c32_relu40k_s42_maT,32,16.9,ST Edge AI Developer Cloud
+STM32G474,Cortex-M4,170,c32_relu40k_s42_maT,32,18.5,ST Edge AI Developer Cloud
+STM32F469,Cortex-M4,180,c32_relu40k_s42_maT,32,19.3,ST Edge AI Developer Cloud
+STM32F746,Cortex-M7,216,c32_relu40k_s42_maT,32,9.1,ST Edge AI Developer Cloud
+STM32H747,Cortex-M7,400,c32_relu40k_s42_maT,32,5.0,ST Edge AI Developer Cloud
+STM32H743,Cortex-M7,480,c32_relu40k_s42_maT,32,3.8,ST Edge AI Developer Cloud
+STM32H7S78,Cortex-M7,600,c32_relu40k_s42_maT,32,3.6,ST Edge AI Developer Cloud
+STM32N6570,Cortex-M55,800,c32_relu40k_s42_maT,32,1.95,ST Edge AI Developer Cloud
+ESP32-D0WD-V3,Xtensa LX6,240,c32_mild40k_s42,32,82.6,ESP32_SignTest Serial Monitor
+ESP32-D0WD-V3,Xtensa LX6,240,c48_relu40k_s42,48,189.2,ESP32_SignTest Serial Monitor
+STM32F401RE,Cortex-M4,84,c48_relu40k_s42_maT,48,81.7,ST Edge AI Developer Cloud
+STM32L4R9,Cortex-M4,120,c48_relu40k_s42_maT,48,58.1,ST Edge AI Developer Cloud
+STM32G474,Cortex-M4,170,c48_relu40k_s42_maT,48,42.8,ST Edge AI Developer Cloud
+STM32C5A3,Cortex-M33,144,c48_relu40k_s42_maT,48,43.4,ST Edge AI Developer Cloud
+STM32U585,Cortex-M33,160,c48_relu40k_s42_maT,48,39.3,ST Edge AI Developer Cloud
+STM32U3C5,Cortex-M33,96,c48_relu40k_s42_maT,48,19.6,ST Edge AI Developer Cloud
+STM32H573,Cortex-M33,250,c48_relu40k_s42_maT,48,25.3,ST Edge AI Developer Cloud
+STM32F746,Cortex-M7,216,c48_relu40k_s42_maT,48,19.0,ST Edge AI Developer Cloud
+STM32F769,Cortex-M7,216,c48_relu40k_s42_maT,48,18.8,ST Edge AI Developer Cloud
+STM32H7B3,Cortex-M7,280,c48_relu40k_s42_maT,48,14.8,ST Edge AI Developer Cloud
+STM32H747,Cortex-M7,400,c48_relu40k_s42_maT,48,10.3,ST Edge AI Developer Cloud
+STM32H743,Cortex-M7,480,c48_relu40k_s42_maT,48,8.6,ST Edge AI Developer Cloud
+STM32H735,Cortex-M7,550,c48_relu40k_s42_maT,48,7.5,ST Edge AI Developer Cloud
+STM32H7S78,Cortex-M7,600,c48_relu40k_s42_maT,48,7.2,ST Edge AI Developer Cloud
+STM32N6570,Cortex-M55,800,c48_relu40k_s42_maT,48,4.1,ST Edge AI Developer Cloud

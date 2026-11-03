@@ -1,0 +1,12 @@
+Re-analysis 'final' on morocco_final: 423 known-class crops, 363 screenshots, 24 other signs. Predictions identical to eval_final.py (same models, same input).
+
+1. Accuracy with 95% intervals, per model (screenshot bootstrap, 2000 resamples) and Wilson:
+   c48_relu40k_s42_maR      sha a86ea97f5154   94.8%  bootstrap  92.6- 96.7  Wilson  92.3- 96.5
+   c48_relu40k_s1_maR       sha babd4ee36802   95.3%  bootstrap  93.3- 97.1  Wilson  92.8- 96.9
+   c48_relu40k_s2_maR       sha 4b0769a475dc   95.3%  bootstrap  93.2- 97.1  Wilson  92.8- 96.9
+   mean of the 3 models: 95.1%, bootstrap of the seed-mean 93.6-96.6 (this is the interval eval_final.py reported; it is narrower because averaging three models smooths crops on which the seeds disagree)
+   crops on which the 3 models disagree: 34 of 423
+
+2. Accuracy per drive (mean of the 3 models; Wilson interval of the seed-42 model):
+   fes to ifran           n= 157   96.0% ± 0.6  (Wilson 91.1-97.8)  speed limits 95.1% (n=54)
+   marrakech              n= 266   94.6% ± 0.4  (Wilson 90.9-96.6)  speed limits 76.5% (n=17)
