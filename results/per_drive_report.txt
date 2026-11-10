@@ -1,0 +1,10 @@
+== dev
+autorout fes-rabat       crops  158 shots  153 classes  19 acc  76.4±2.2 CI  71.7- 81.2 speed  82  75.2
+fes_video1               crops  110 shots   83 classes  14 acc  85.8±2.6 CI  79.6- 91.4 speed   6  50.0
+fes_video2               crops  197 shots  161 classes  20 acc  92.7±2.3 CI  89.9- 95.4 speed  17  88.2
+rabat_video1             crops  231 shots  224 classes  26 acc  91.5±0.5 CI  88.6- 94.3 speed  47  81.6
+ALL                      crops  696 shots  621 classes  36 acc  87.5±0.3 CI  85.5- 89.4
+== final
+fes to ifran             crops  157 shots  133 classes  28 acc  96.0±0.6 CI  93.4- 98.0 speed  54  95.1
+marrakech                crops  266 shots  230 classes  25 acc  94.6±0.4 CI  92.5- 96.6 speed  17  76.5
+ALL                      crops  423 shots  363 classes  38 acc  95.1±0.2 CI  93.5- 96.6

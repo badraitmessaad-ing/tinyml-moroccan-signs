@@ -1,0 +1,46 @@
+fine-tune b48_plain_s42 with 8599 Moroccan train crops (21 near-duplicates of test crops removed), 20 x 800 steps, 15% Moroccan per batch, 11.1 min
+Moroccan test = val + test splits: 266 crops, 32 classes   (int8 model)
+
+                         before    after
+Moroccan accuracy         53.0%    72.9%
+Moroccan balanced         54.1%    64.0%
+  source bbc              53.1%    78.9%   (n=128)
+  source blue             34.2%    54.8%   (n=73)
+  source img              73.8%    81.5%   (n=65)
+TS-1M test balanced      91.85%   91.17%   (forgetting check)
+
+int8 for the MCU: 47.5 KB flash, weights 39.6 KB
+
+per class (before -> after, n):
+   20.4% ->  64.8%  (n= 54)  26_Stationnement_interdit
+   20.9% ->  58.1%  (n= 43)  16_Passage_pour_pietons
+   95.3% ->  97.7%  (n= 43)  27_Limitation_de_Vitesse
+   88.9% ->  94.4%  (n= 18)  13_Cedez_le_passage_a_l_intersection_signal
+   66.7% ->  80.0%  (n= 15)  01_Sens_giratoire_obligatoire
+   83.3% ->  83.3%  (n= 12)  34_Sens_interdit
+   72.7% ->  72.7%  (n= 11)  43_Arret_et_stationnement_interdit
+   60.0% ->  80.0%  (n= 10)  28_Stop
+  100.0% -> 100.0%  (n=  7)  50_Obligation_de_tourner_a_drote_avant_le_p
+   40.0% ->  40.0%  (n=  5)  17_Endroit_frequente_par_les_enfants
+   40.0% ->  60.0%  (n=  5)  45_Obligation_de_tourner_a_gauche_avant_le_
+   25.0% ->  75.0%  (n=  4)  18_Acces_interdit_aux_vehicules_affectes_au
+    0.0% ->  25.0%  (n=  4)  21_Interdiction_de_tourner_a_droite
+    0.0% ->  50.0%  (n=  4)  31_Succession_de_virages_dont_le_premier_es
+  100.0% -> 100.0%  (n=  4)  51_Autres_dangers
+   33.3% ->  33.3%  (n=  3)  22_Interdiction_de_tourner_a_gauche
+   33.3% ->  33.3%  (n=  3)  29_Passage_d_animaux_domestiques
+  100.0% -> 100.0%  (n=  2)  24_Virage_a_gauche
+  100.0% ->  50.0%  (n=  2)  48_Chaussee_retrecie_par_la_gauche
+    0.0% ->   0.0%  (n=  2)  69_Chaussee_retrecie_par_la_droite
+  100.0% -> 100.0%  (n=  2)  19_Interdiction_de_depasser
+    0.0% ->  50.0%  (n=  2)  32_Succession_de_virages_dont_le_premier_es
+   50.0% -> 100.0%  (n=  2)  60_Ralentisseur_type_dos_d_ane
+    0.0% ->   0.0%  (n=  1)  00_Acces_interdit_aux_motocycles
+  100.0% -> 100.0%  (n=  1)  08_Travaux
+    0.0% ->   0.0%  (n=  1)  20_Interdiction_de_faire_demi_tour
+  100.0% -> 100.0%  (n=  1)  40_Cassis_ou_dos_d_ane
+  100.0% -> 100.0%  (n=  1)  02_Parc_de_stationnement
+  100.0% -> 100.0%  (n=  1)  03_Circulation_interdite_dans_les_deux_sens
+    0.0% ->   0.0%  (n=  1)  11_Arret_d_autobus
+    0.0% ->   0.0%  (n=  1)  12_Intersection_d_une_route_prioritaire_ave
+  100.0% -> 100.0%  (n=  1)  23_Virage_a_droite
